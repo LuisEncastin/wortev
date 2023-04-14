@@ -1,3 +1,60 @@
 .card {
-    @apply w-[300px] h-[400px] outline-dotted bg-red-500 rounded-md gap-4;
+    @apply w-[300px] h-[400px] outline-dotted bg-slate-700 rounded-md gap-4;
+}
+
+.cardInner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    backface-visibility: hidden;
+    -moz-backface-visibility: hidden; 
+}
+
+.card:focus {
+    outline: 0;
+}
+
+.card:hover .cardInner,
+.card:focus .cardInner{
+  transform: rotateY(180deg);
+}
+
+.cardFront,
+.cardBack {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.cardFront {
+    @apply rounded-t-md;
+    z-index: 2;
+}
+
+.cardBack {
+    @apply rounded-md py-8 px-4 text-justify;
+    background-color: #FBDA61;
+    background-image: linear-gradient(45deg, #FBDA61 0%, #FF5ACD 100%);
+    color: black;
+    transform: rotateY(180deg);
+    z-index: 1;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+}
+
+.imageContainer {
+    @apply w-full h-[80%] bg-green-500 rounded-t-md;
+}
+
+.cardMenuContainer {
+    @apply w-full flex flex-col items-start bg-slate-700 text-white justify-center p-4;
+}
+
+.cardSubcontainer {
+    @apply w-full flex flex-row items-center justify-between
 }

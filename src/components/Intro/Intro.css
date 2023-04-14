@@ -23,7 +23,7 @@
 }
 
 .button {
-    @apply px-4 h-12 rounded-md outline-none border-none font-semibold text-white bg-slate-700;
+    @apply px-4 h-12 rounded-md cursor-pointer outline-none border-none font-semibold text-white bg-slate-700 hover:scale-[101%] hover:drop-shadow-lg ease-in duration-200;;
 }
 
 .messageContainer {
