@@ -36,7 +36,7 @@
 }
 
 .cardBack {
-    @apply rounded-md py-8 px-4 text-justify;
+    @apply rounded-md py-8 px-4 overflow-y-auto text-justify flex flex-col items-center justify-between;
     background-color: #FBDA61;
     background-image: linear-gradient(45deg, #FBDA61 0%, #FF5ACD 100%);
     color: black;
@@ -47,8 +47,25 @@
     align-items: start;
 }
 
+.comicNameItem {
+    @apply text-xs;
+}
+
 .imageContainer {
-    @apply w-full h-[80%] bg-green-500 rounded-t-md;
+    @apply relative w-full h-[80%] bg-green-500 rounded-t-md;
+}
+
+.imageContainer img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+.cardImage {
+    @apply rounded-t-md
 }
 
 .cardMenuContainer {
@@ -56,5 +73,5 @@
 }
 
 .cardSubcontainer {
-    @apply w-full flex flex-row items-center justify-between
+    @apply w-full flex flex-row items-center justify-between;
 }
