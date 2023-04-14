@@ -1,0 +1,3 @@
+.card {
+    @apply w-[300px] h-[400px] outline-dotted bg-red-500 rounded-md gap-4;
+}

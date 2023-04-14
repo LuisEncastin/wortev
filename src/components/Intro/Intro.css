@@ -1,0 +1,32 @@
+.intro {
+    @apply w-full h-auto min-h-[200px] flex flex-col items-center justify-center py-4 md:py-8;
+}
+
+.titleContainer {
+    @apply text-center w-2/3;
+}
+
+.mainContainer {
+    @apply mt-2 md:mt-4 px-4 text-center flex flex-col items-center justify-center; 
+}
+
+.ctaContainer {
+    @apply mt-2 md:mt-4 grid grid-cols-1 md:grid-cols-3 gap-4 items-center justify-center;
+}
+
+.input, .button {
+    @apply shadow-lg;
+}
+
+.input {
+    @apply h-12 md:col-span-2 rounded-md outline-none border-none pl-4;
+}
+
+.button {
+    @apply px-4 h-12 rounded-md outline-none border-none font-semibold text-white bg-slate-700;
+}
+
+.messageContainer {
+    @apply mt-4 w-2/3 text-center;
+}
+
