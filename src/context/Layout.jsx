@@ -31,9 +31,11 @@ function Layout(props) {
   }
 
   return (
-    <themeContext.Provider value={{ theme, updateTheme }}>
-      {props.children}
-    </themeContext.Provider>
+    <>
+      <themeContext.Provider value={{ theme, updateTheme }}>
+        {props.children}
+      </themeContext.Provider>
+    </>
   );
 }
 

@@ -1,12 +1,9 @@
 .card {
-    @apply w-[300px] h-[400px] outline-dotted bg-slate-700 rounded-md gap-4;
+    @apply w-[300px] h-[400px] rounded-md gap-4;
 }
 
 .cardInner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
+    @apply relative w-full h-full text-center;
     transition: transform 0.6s;
     transform-style: preserve-3d;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -15,7 +12,7 @@
 }
 
 .card:focus {
-    outline: 0;
+    @apply outline-none;
 }
 
 .card:hover .cardInner,
@@ -25,26 +22,19 @@
 
 .cardFront,
 .cardBack {
-  position: absolute;
-  width: 100%;
-  height: 100%;
+    @apply absolute w-full h-full;
 }
 
 .cardFront {
-    @apply rounded-t-md;
-    z-index: 2;
+    @apply rounded-t-md z-10;
 }
 
 .cardBack {
-    @apply rounded-md py-8 px-4 overflow-y-auto text-justify flex flex-col items-center justify-between;
+    @apply z-10 rounded-md text-black py-8 px-4 overflow-y-auto text-justify flex flex-col items-start justify-start;
     background-color: #FBDA61;
     background-image: linear-gradient(45deg, #FBDA61 0%, #FF5ACD 100%);
-    color: black;
     transform: rotateY(180deg);
     z-index: 1;
-    display: flex;
-    justify-content: start;
-    align-items: start;
 }
 
 .comicNameItem {
@@ -56,12 +46,7 @@
 }
 
 .imageContainer img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    @apply absolute top-0 left-0 w-full h-full object-cover;
   }
 
 .cardImage {

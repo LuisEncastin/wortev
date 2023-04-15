@@ -5,6 +5,7 @@ import { Layout }from '../context/Layout'
 import Home from '../pages/Home';
 import CompletedRegistration from '../pages/CompletedRegistration';
 
+
 function App() {
   return (
     <BrowserRouter>
@@ -12,7 +13,7 @@ function App() {
         <Routes>
             <Route index element={<Home />} />
             <Route path="/success" element={<CompletedRegistration/>} />          
-        </Routes>      
+        </Routes>
       </Layout>
     </BrowserRouter>
   );

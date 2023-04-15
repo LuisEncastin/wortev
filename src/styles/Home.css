@@ -1,34 +1,20 @@
 .home {
-    position: relative;
-    width: 100%;
-    min-height: 500px;
+    @apply relative w-full min-h-[500px];
 }
 
 .themeButton {
-    @apply px-4 h-12 rounded-md cursor-pointer outline-none border-none font-semibold text-black hover:scale-[101%] hover:drop-shadow-lg ease-in duration-200;
-    position: fixed;
-    right: 10px;
-    bottom: 10px;
-    z-index: 5;
+    @apply fixed right-8 bottom-8 z-10 px-4 h-12 rounded-md cursor-pointer outline-none border-none font-semibold text-black hover:scale-[101%] hover:drop-shadow-lg ease-in duration-200;
 }
 
 .curve {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
+    @apply absolute bottom-0 left-0 w-full overflow-hidden leading-none rotate-180;
 }
 
 .curve svg {
-    position: relative;
-    display: block;
+    @apply relative block h-[142px];
     width: calc(100% + 1.3px);
-    height: 142px;
 }
 
 .curve .shape-fill {
-    fill: #FFFFFF;
+    @apply fill-[#FFFFFF];
 }
