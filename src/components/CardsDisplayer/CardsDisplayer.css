@@ -2,6 +2,10 @@
     @apply absolute w-full h-auto flex flex-col items-center justify-center pb-4;
 }
 
+.filterContainer {
+    @apply w-2/6 py-2 flex flex-row items-center justify-around outline-dotted rounded-md;
+}
+
 .mainCardsContainer {
     @apply w-full h-auto min-h-[300px] flex flex-col items-center justify-center py-4 md:py-8 px-4 md:px-0;
 }
