@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/wortev/static/css/main.0428fc06.css",
+    "main.js": "/wortev/static/js/main.7d097379.js",
+    "static/media/Montserrat-Italic.ttf": "/wortev/static/media/Montserrat-Italic.ef11b720b9a6cfb9a317.ttf",
+    "static/media/Montserrat.ttf": "/wortev/static/media/Montserrat.3faa3eef13649db02044.ttf",
+    "index.html": "/wortev/index.html",
+    "main.0428fc06.css.map": "/wortev/static/css/main.0428fc06.css.map",
+    "main.7d097379.js.map": "/wortev/static/js/main.7d097379.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0428fc06.css",
+    "static/js/main.7d097379.js"
+  ]
+}

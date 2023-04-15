@@ -1,1 +1,0 @@
-This project is a technical test for Wortev to apply for a Front end developer role.
