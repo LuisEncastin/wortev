@@ -11,7 +11,7 @@
 }
 
 .ctaContainer {
-    @apply mt-2 md:mt-4 grid grid-cols-1 md:grid-cols-3 gap-4 items-center justify-center;
+    @apply w-full sm:w-auto mt-2 md:mt-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 items-center justify-center;
 }
 
 .input, .button {
@@ -22,8 +22,16 @@
     @apply h-12 md:col-span-2 rounded-md outline-none border-none pl-4;
 }
 
-.button {
-    @apply px-4 h-12 rounded-md cursor-pointer outline-none border-none font-semibold text-white bg-slate-700 hover:scale-[101%] hover:drop-shadow-lg ease-in duration-200;;
+.enabledButton {
+    @apply px-4 h-12 rounded-md cursor-pointer outline-none border-none font-semibold text-black bg-[#FBDA61] hover:scale-[101%] hover:drop-shadow-lg ease-in duration-200;
+}
+
+.disabledButton {
+    @apply px-4 h-12 rounded-md cursor-pointer outline-none border-none font-semibold text-white bg-slate-700;
+}
+
+.errorMsgContainer {
+    @apply mt-4 p-0 text-red-800 font-bold;
 }
 
 .messageContainer {

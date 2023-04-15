@@ -30,12 +30,8 @@ function CardsDisplayer() {
       // eslint-disable-next-line react-hooks/exhaustive-deps
       }, []);
 
-    console.log(data)
-
     const mappedCards = data.map((item) =>{
-        console.log(item.thumbnail.path.split('/').slice(-1))
         if (item.thumbnail.path.split('/').slice(-1).toString() !== 'image_not_available') {
-            console.log('holaaaa')
             return (
                 <Card
                 characterImage={`${item.thumbnail.path}/portrait_uncanny.${item.thumbnail.extension}`}
@@ -49,14 +45,6 @@ function CardsDisplayer() {
             return null; 
           }
     })
-
-    // <Card
-    // characterImage={`${item.thumbnail.path}/portrait_uncanny.${item.thumbnail.extension}`}
-    // characterName={item.name}
-    // characterComics={item.comics.available}
-    // characterStories={item.stories.available}
-    // comics={item.comics.items}
-    // />   
 
     return (
         <section className="cardsDisplayer">
